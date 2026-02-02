@@ -8,6 +8,10 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Minesweeper"
@@ -16,10 +20,10 @@ config/name_localized={
 }
 config/version="4.2.9"
 run/main_scene="res://game.tscn"
-config/features=PackedStringArray("4.2")
+config/features=PackedStringArray("4.6")
 boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/stretch_mode=0
 boot_splash/image="res://splash.png"
-boot_splash/fullsize=false
 config/icon="res://icon.png"
 
 [autoload]

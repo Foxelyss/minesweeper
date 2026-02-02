@@ -1,5 +1,6 @@
 .sconsign.dblite
 .cache
+**/*.uid
 project/.import
 **/*.os
 **/*.o
@@ -8,7 +9,6 @@ project/.import
 **/*.bin
 **/*.keystore
 project/.godot
-**/*.import
 **/*.so
 **/*.wasm
 windows/*
