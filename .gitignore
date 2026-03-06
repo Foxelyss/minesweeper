@@ -1,4 +1,5 @@
 .sconsign.dblite
+compile_commands.json
 .cache
 **/*.uid
 project/.import
@@ -15,3 +16,7 @@ windows/*
 web/*
 android/*
 linux/*
+linux.zip
+windows.zip
+android.zip
+web.zip

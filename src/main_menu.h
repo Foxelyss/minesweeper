@@ -1,9 +1,9 @@
-#ifndef MENU_H
-#define MENU_H
+#ifndef MAIN_MENU_H
+#define MAIN_MENU_H
 
-#include "field.h"
-#include "godot_cpp/classes/v_box_container.hpp"
-#include <godot_cpp/classes/v_box_container.hpp>
+#include "game_field.h"
+
+#include <godot_cpp/classes/animation_player.hpp>
 
 namespace godot {
 
@@ -11,7 +11,8 @@ class MainMenu : public Node {
   GDCLASS(MainMenu, Node)
 
 private:
-  Field *_game_field;
+  GameField *_game_field;
+  AnimationPlayer *_game_flow_animation_player;
 
 protected:
   static void _bind_methods();

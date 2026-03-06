@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqf7tn1xsehio"
-path.s3tc="res://.godot/imported/scene_Material.png-8c62f5782a050ee5951c1a8358cb0774.s3tc.ctex"
-path.etc2="res://.godot/imported/scene_Material.png-8c62f5782a050ee5951c1a8358cb0774.etc2.ctex"
+uid="uid://crhvvhe3d5ksl"
+path.s3tc="res://.godot/imported/scene_flag Base Color.png-6a6a2fbc4713da5df0494e25114af29b.s3tc.ctex"
+path.etc2="res://.godot/imported/scene_flag Base Color.png-6a6a2fbc4713da5df0494e25114af29b.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://scene_Material.png"
-dest_files=["res://.godot/imported/scene_Material.png-8c62f5782a050ee5951c1a8358cb0774.s3tc.ctex", "res://.godot/imported/scene_Material.png-8c62f5782a050ee5951c1a8358cb0774.etc2.ctex"]
+source_file="res://3d_tiles/scene_flag Base Color.png"
+dest_files=["res://.godot/imported/scene_flag Base Color.png-6a6a2fbc4713da5df0494e25114af29b.s3tc.ctex", "res://.godot/imported/scene_flag Base Color.png-6a6a2fbc4713da5df0494e25114af29b.etc2.ctex"]
 
 [params]
 

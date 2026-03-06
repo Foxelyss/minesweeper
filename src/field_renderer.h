@@ -1,46 +1,41 @@
-#ifndef MINE_GRID_H
-#define MINE_GRID_H
+#ifndef FIELD_RENDERER_GRID_H
+#define FIELD_RENDERER_GRID_H
 
-#include "field.h"
-#include "godot_cpp/classes/animated_sprite2d.hpp"
-#include "godot_cpp/classes/animation_player.hpp"
-#include "godot_cpp/classes/audio_stream.hpp"
-#include "godot_cpp/classes/audio_stream_player.hpp"
-#include "godot_cpp/classes/resource.hpp"
-#include "godot_cpp/classes/texture2d.hpp"
-#include "godot_cpp/classes/timer.hpp"
-#include "godot_cpp/variant/array.hpp"
-#include "godot_cpp/variant/string.hpp"
-#include "godot_cpp/variant/string_name.hpp"
-#include "godot_cpp/variant/vector2i.hpp"
+#include "game_field.h"
 
-#include "godot_cpp/classes/button.hpp"
-#include "godot_cpp/classes/engine.hpp"
-#include "godot_cpp/classes/grid_container.hpp"
-#include "godot_cpp/classes/input.hpp"
-#include "godot_cpp/classes/input_event.hpp"
-#include "godot_cpp/classes/node.hpp"
-#include "godot_cpp/classes/scene_tree.hpp"
-#include "godot_cpp/variant/callable.hpp"
-#include "godot_cpp/variant/node_path.hpp"
-#include "godot_cpp/variant/string.hpp"
-#include "godot_cpp/variant/vector2.hpp"
-#include "godot_cpp/variant/vector2i.hpp"
+#include <godot_cpp/classes/animated_sprite2d.hpp>
+#include <godot_cpp/classes/animation_player.hpp>
+#include <godot_cpp/classes/audio_stream.hpp>
+#include <godot_cpp/classes/audio_stream_player.hpp>
 #include <godot_cpp/classes/button.hpp>
 #include <godot_cpp/classes/engine.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/grid_container.hpp>
+#include <godot_cpp/classes/input.hpp>
+#include <godot_cpp/classes/input_event.hpp>
 #include <godot_cpp/classes/label.hpp>
+#include <godot_cpp/classes/node.hpp>
+#include <godot_cpp/classes/resource.hpp>
+#include <godot_cpp/classes/scene_tree.hpp>
+#include <godot_cpp/classes/timer.hpp>
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
+#include <godot_cpp/variant/array.hpp>
+#include <godot_cpp/variant/callable.hpp>
+#include <godot_cpp/variant/node_path.hpp>
+#include <godot_cpp/variant/string.hpp>
+#include <godot_cpp/variant/string_name.hpp>
+#include <godot_cpp/variant/vector2.hpp>
+#include <godot_cpp/variant/vector2i.hpp>
+
 namespace godot {
 
-class FieldGrid : public Node {
-  GDCLASS(FieldGrid, Node)
+class FieldRenderer : public Node {
+  GDCLASS(FieldRenderer, Node)
 
 private:
-  Field *_game_field;
+  GameField *_game_field;
 
   Control *_menu;
   GridContainer *_grid;
@@ -86,8 +81,8 @@ private:
 public:
   static void _bind_methods();
 
-  FieldGrid();
-  ~FieldGrid();
+  FieldRenderer();
+  ~FieldRenderer();
 
   void _ready() override;
   void _process(float delta);
@@ -97,9 +92,9 @@ public:
 
   void start_game();
   void update_grid();
-  void update_game_status();
+  GameState update_game_status();
   void create_records_file();
-  void retry_game();
+  void reset_game_state();
   void go_to_menu();
 
   void move_grid(float x, float y);

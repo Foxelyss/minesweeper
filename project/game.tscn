@@ -1,23 +1,23 @@
-[gd_scene load_steps=37 format=3 uid="uid://b81dt7bbbxlb6"]
+[gd_scene format=3 uid="uid://b81dt7bbbxlb6"]
 
 [ext_resource type="Theme" uid="uid://m313wodg5ka8" path="res://game_theme.tres" id="1_mbmnw"]
-[ext_resource type="Texture2D" uid="uid://lmwkgrkj57a6" path="res://assets/pop_animation/pop_Page 1.png" id="3_oryvk"]
-[ext_resource type="Texture2D" uid="uid://u7trspupuy80" path="res://assets/pop_animation/pop_Page 2.png" id="4_5twn2"]
-[ext_resource type="Texture2D" uid="uid://c3ajmj8trcf24" path="res://assets/pop_animation/pop_Page 3.png" id="5_pvnlq"]
-[ext_resource type="Texture2D" uid="uid://y3miowl0f0g6" path="res://assets/pop_animation/pop_Page 4.png" id="6_7mm7i"]
-[ext_resource type="Texture2D" uid="uid://pbesy1fyesym" path="res://assets/pop_animation/pop_Page 5.png" id="7_paa88"]
-[ext_resource type="Texture2D" uid="uid://0ujt3dnrhxxg" path="res://assets/pop_animation/pop_Page 6.png" id="8_fxwpk"]
-[ext_resource type="Texture2D" uid="uid://cfuo54tmjp8h8" path="res://assets/pop_animation/pop_Page 7.png" id="9_s1l4v"]
-[ext_resource type="Texture2D" uid="uid://ht62n14wrcrn" path="res://assets/pop_animation/pop_Page 8.png" id="10_v63ak"]
-[ext_resource type="Texture2D" uid="uid://cy1lrcmg41jax" path="res://assets/pop_animation/pop_Page 9.png" id="11_fd5c6"]
-[ext_resource type="Texture2D" uid="uid://ban30n36rraoe" path="res://assets/pop_animation/pop_Page 10.png" id="12_bubr1"]
-[ext_resource type="Texture2D" uid="uid://0t6l5ihepj6k" path="res://assets/pop_animation/pop_Page 11.png" id="13_4jyya"]
-[ext_resource type="Texture2D" uid="uid://b81eljjarqa23" path="res://assets/pop_animation/pop_Page 12.png" id="14_43t6i"]
-[ext_resource type="Texture2D" uid="uid://fum5us11325x" path="res://assets/tiles/background.png" id="14_aun53"]
-[ext_resource type="Shader" path="res://assets/tiles/moving_background.gdshader" id="14_qsn47"]
-[ext_resource type="FontFile" uid="uid://55rr3phu2pv1" path="res://IBM_Plex_Sans/IBMPlexSans-Medium.ttf" id="18_43cos"]
-[ext_resource type="AudioStream" uid="uid://bq5jtmvmebg1n" path="res://sfx/music.mp3" id="20_e02jb"]
-[ext_resource type="PackedScene" uid="uid://dfm8o5ii1spjk" path="res://scene.blend" id="23_8ofhm"]
+[ext_resource type="Texture2D" uid="uid://d4cuxcwu7h52e" path="res://assets/pop_animation/pop_Page 1.png" id="3_oryvk"]
+[ext_resource type="Texture2D" uid="uid://uh8plp2bss01" path="res://assets/pop_animation/pop_Page 2.png" id="4_5twn2"]
+[ext_resource type="Texture2D" uid="uid://db55sgwqnbc13" path="res://assets/pop_animation/pop_Page 3.png" id="5_pvnlq"]
+[ext_resource type="Texture2D" uid="uid://bwc2eu0r6r538" path="res://assets/pop_animation/pop_Page 4.png" id="6_7mm7i"]
+[ext_resource type="Texture2D" uid="uid://klu4dual252f" path="res://assets/pop_animation/pop_Page 5.png" id="7_paa88"]
+[ext_resource type="Texture2D" uid="uid://ce3ileikces7b" path="res://assets/pop_animation/pop_Page 6.png" id="8_fxwpk"]
+[ext_resource type="Texture2D" uid="uid://buury1hhnt62s" path="res://assets/pop_animation/pop_Page 7.png" id="9_s1l4v"]
+[ext_resource type="Texture2D" uid="uid://cqh6ein1hyn1j" path="res://assets/pop_animation/pop_Page 8.png" id="10_v63ak"]
+[ext_resource type="Texture2D" uid="uid://bpm4vf5qpax2i" path="res://assets/pop_animation/pop_Page 9.png" id="11_fd5c6"]
+[ext_resource type="Texture2D" uid="uid://bktw8qdq7c165" path="res://assets/pop_animation/pop_Page 10.png" id="12_bubr1"]
+[ext_resource type="Texture2D" uid="uid://cbymcvhq7x337" path="res://assets/pop_animation/pop_Page 11.png" id="13_4jyya"]
+[ext_resource type="Texture2D" uid="uid://cpe2vkfvjse4o" path="res://assets/pop_animation/pop_Page 12.png" id="14_43t6i"]
+[ext_resource type="Texture2D" uid="uid://dvgh6spa1ssgi" path="res://assets/tiles/background.png" id="14_aun53"]
+[ext_resource type="Shader" uid="uid://p0uyh7ylpii1" path="res://assets/tiles/moving_background.gdshader" id="14_qsn47"]
+[ext_resource type="FontFile" uid="uid://3ncgw1pqmwvu" path="res://IBM_Plex_Sans/IBMPlexSans-Medium.ttf" id="18_43cos"]
+[ext_resource type="AudioStream" uid="uid://deaxc81h4b35s" path="res://sfx/music.mp3" id="20_e02jb"]
+[ext_resource type="PackedScene" uid="uid://cx36cn2wnomdp" path="res://3d_tiles/scene.blend" id="23_8ofhm"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_nhay0"]
 dof_blur_far_enabled = true
@@ -135,13 +135,13 @@ length = 0.279
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2tner"]
 _data = {
-"exit": SubResource("Animation_rd5ih"),
-"lose": SubResource("Animation_5118c"),
-"pop_in": SubResource("Animation_fhhpw"),
-"pop_out": SubResource("Animation_q0q6x"),
-"start": SubResource("Animation_1cya3"),
-"to_game": SubResource("Animation_ia1ov"),
-"win": SubResource("Animation_841ue")
+&"exit": SubResource("Animation_rd5ih"),
+&"lose": SubResource("Animation_5118c"),
+&"pop_in": SubResource("Animation_fhhpw"),
+&"pop_out": SubResource("Animation_q0q6x"),
+&"start": SubResource("Animation_1cya3"),
+&"to_game": SubResource("Animation_ia1ov"),
+&"win": SubResource("Animation_841ue")
 }
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u0d3t"]
@@ -196,14 +196,14 @@ animations = [{
 "speed": 90.0
 }]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0prd4"]
-bg_color = Color(1.44392e-06, 0.604088, 0.829145, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m0c54"]
 bg_color = Color(0.669089, 0.802267, 0.918987, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_erase"]
 bg_color = Color(0.318127, 0.621596, 0.901751, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0prd4"]
+bg_color = Color(1.44392e-06, 0.604088, 0.829145, 1)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_41xup"]
 render_priority = 0
@@ -259,22 +259,20 @@ tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1.31, 1, 0, 2.265, 0, 2.67, 1,
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_175g2"]
 _data = {
-"flow": SubResource("Animation_22f3t")
+&"flow": SubResource("Animation_22f3t")
 }
 
-[node name="Game" type="Node3D"]
+[node name="Game" type="Node3D" unique_id=2070568156]
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=930917338]
 transform = Transform3D(1, 0, 0, 0, 0.799234, 0.60102, 0, -0.60102, 0.799234, 0, 4.0778, 5.17343)
 attributes = SubResource("CameraAttributesPractical_nhay0")
 current = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_2tner")
-}
+[node name="GameFlowAnimationPlayer" type="AnimationPlayer" parent="." unique_id=239952604]
+libraries/ = SubResource("AnimationLibrary_2tner")
 
-[node name="Menu" type="Control" parent="."]
+[node name="Menu" type="Control" parent="." unique_id=1856039993]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -282,7 +280,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="Menu"]
+[node name="CenterContainer" type="CenterContainer" parent="Menu" unique_id=1557808539]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -291,50 +289,50 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Menu/CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/CenterContainer" unique_id=2112956615]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 theme_override_constants/separation = 75
 
-[node name="Label" type="Label" parent="Menu/CenterContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="Menu/CenterContainer/VBoxContainer" unique_id=559434123]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 theme_override_font_sizes/font_size = 36
 text = "GAMETITLE"
 horizontal_alignment = 1
 
-[node name="Buttons" type="VBoxContainer" parent="Menu/CenterContainer/VBoxContainer"]
+[node name="Buttons" type="VBoxContainer" parent="Menu/CenterContainer/VBoxContainer" unique_id=2042913356]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="Button" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons"]
+[node name="easy_difficulty" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons" unique_id=514256907]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 text = "EASY"
 
-[node name="Button2" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons"]
+[node name="medium_difficulty" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons" unique_id=545082529]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 text = "MEDIUM"
 
-[node name="Button3" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons"]
+[node name="hard_difficulty" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons" unique_id=1505307691]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 text = "HARD"
 
-[node name="Button5" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons"]
+[node name="show_records" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons" unique_id=1361155112]
 layout_mode = 2
 text = "SHOWRECORDS"
 
-[node name="Button4" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons"]
+[node name="quit" type="Button" parent="Menu/CenterContainer/VBoxContainer/Buttons" unique_id=1596047954]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 text = "QUIT"
 
-[node name="MainMenu2" type="MainMenu" parent="Menu/CenterContainer/VBoxContainer"]
+[node name="MainMenu2" type="MainMenu" parent="Menu/CenterContainer/VBoxContainer" unique_id=1859590761]
 process_mode = 4
 
-[node name="MarginContainer2" type="MarginContainer" parent="Menu"]
+[node name="MarginContainer2" type="MarginContainer" parent="Menu" unique_id=1585255548]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -347,11 +345,11 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="Control" type="Control" parent="Menu/MarginContainer2"]
+[node name="Control" type="Control" parent="Menu/MarginContainer2" unique_id=513811700]
 layout_mode = 2
 mouse_filter = 2
 
-[node name="Copyright" type="Label" parent="Menu/MarginContainer2/Control"]
+[node name="Copyright" type="Label" parent="Menu/MarginContainer2/Control" unique_id=1184440131]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -365,7 +363,7 @@ grow_vertical = 0
 theme = ExtResource("1_mbmnw")
 text = "COPYRIGHT"
 
-[node name="MainGame" type="Control" parent="."]
+[node name="MainGame" type="Control" parent="." unique_id=268845577]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -374,7 +372,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="DraggableSpace" type="CenterContainer" parent="MainGame"]
+[node name="DraggableSpace" type="CenterContainer" parent="MainGame" unique_id=1205592918]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -387,11 +385,11 @@ scale = Vector2(1e-05, 1e-05)
 theme = ExtResource("1_mbmnw")
 use_top_left = true
 
-[node name="GameGrid" type="GridContainer" parent="MainGame/DraggableSpace"]
+[node name="GameGrid" type="GridContainer" parent="MainGame/DraggableSpace" unique_id=1813898231]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MainGame"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MainGame" unique_id=1875097160]
 position = Vector2(-333, -333)
 scale = Vector2(0.161209, 0.161209)
 sprite_frames = SubResource("SpriteFrames_u0d3t")
@@ -399,7 +397,7 @@ animation = &"popit"
 frame = 12
 frame_progress = 1.0
 
-[node name="MarginContainer" type="MarginContainer" parent="MainGame"]
+[node name="MarginContainer" type="MarginContainer" parent="MainGame" unique_id=797565543]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -413,19 +411,19 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
 
-[node name="Control" type="Control" parent="MainGame/MarginContainer"]
+[node name="Control" type="Control" parent="MainGame/MarginContainer" unique_id=252598111]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="MinesCounter" type="Label" parent="MainGame/MarginContainer/Control"]
+[node name="MinesCounter" type="Label" parent="MainGame/MarginContainer/Control" unique_id=862533403]
 layout_mode = 1
 offset_right = 120.0
 offset_bottom = 23.0
 theme = ExtResource("1_mbmnw")
 language = "ru"
 
-[node name="BackButton" type="Button" parent="MainGame/MarginContainer/Control"]
+[node name="BackButton" type="Button" parent="MainGame/MarginContainer/Control" unique_id=379546113]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -436,7 +434,7 @@ grow_vertical = 0
 theme = ExtResource("1_mbmnw")
 text = "BACKTOMENU"
 
-[node name="FlaggingMode" type="CheckButton" parent="MainGame/MarginContainer/Control"]
+[node name="FlaggingMode" type="CheckButton" parent="MainGame/MarginContainer/Control" unique_id=1180293947]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -451,7 +449,7 @@ grow_vertical = 0
 theme = ExtResource("1_mbmnw")
 text = "FLAGGINGMODE"
 
-[node name="RetryButton" type="Button" parent="MainGame/MarginContainer/Control"]
+[node name="RetryButton" type="Button" parent="MainGame/MarginContainer/Control" unique_id=851239698]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -465,7 +463,7 @@ grow_vertical = 0
 theme = ExtResource("1_mbmnw")
 text = "RETRY"
 
-[node name="GameStatusLabel" type="Label" parent="MainGame/MarginContainer/Control"]
+[node name="GameStatusLabel" type="Label" parent="MainGame/MarginContainer/Control" unique_id=1598578446]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -476,7 +474,7 @@ offset_bottom = 23.0
 grow_horizontal = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="TimeSegments" type="VBoxContainer" parent="MainGame/MarginContainer/Control"]
+[node name="TimeSegments" type="VBoxContainer" parent="MainGame/MarginContainer/Control" unique_id=360848429]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -485,17 +483,17 @@ offset_left = -40.0
 offset_bottom = 50.0
 grow_horizontal = 0
 
-[node name="Records" type="Label" parent="MainGame/MarginContainer/Control/TimeSegments"]
+[node name="Records" type="Label" parent="MainGame/MarginContainer/Control/TimeSegments" unique_id=594279852]
 layout_mode = 2
 
-[node name="TimeCounter" type="Label" parent="MainGame/MarginContainer/Control/TimeSegments"]
+[node name="TimeCounter" type="Label" parent="MainGame/MarginContainer/Control/TimeSegments" unique_id=2143847172]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 text = "
 "
 language = "ru"
 
-[node name="FieldGrid" type="FieldGrid" parent="MainGame"]
+[node name="FieldRenderer" type="FieldRenderer" parent="MainGame" unique_id=566826306]
 mines_around_label = NodePath("../MarginContainer/Control/MinesCounter")
 time_label = NodePath("../MarginContainer/Control/TimeSegments/TimeCounter")
 retry_button = NodePath("../MarginContainer/Control/RetryButton")
@@ -504,14 +502,14 @@ game_status_label = NodePath("../MarginContainer/Control/GameStatusLabel")
 back_to_menu_button = NodePath("../MarginContainer/Control/BackButton")
 process_mode = 4
 
-[node name="PopupMenu" type="Popup" parent="MainGame"]
+[node name="PopupMenu" type="Popup" parent="MainGame" unique_id=1459761200]
 transparent_bg = true
 initial_position = 1
 size = Vector2i(640, 160)
 transparent = true
 theme = ExtResource("1_mbmnw")
 
-[node name="ColorRect" type="ColorRect" parent="MainGame/PopupMenu"]
+[node name="ColorRect" type="ColorRect" parent="MainGame/PopupMenu" unique_id=106431553]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -520,7 +518,7 @@ grow_vertical = 2
 theme = ExtResource("1_mbmnw")
 color = Color(0.105882, 0.447059, 0.572549, 0.478431)
 
-[node name="ui" type="VBoxContainer" parent="MainGame/PopupMenu"]
+[node name="ui" type="VBoxContainer" parent="MainGame/PopupMenu" unique_id=56889578]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -529,104 +527,106 @@ grow_vertical = 2
 theme = ExtResource("1_mbmnw")
 alignment = 1
 
-[node name="Label" type="Label" parent="MainGame/PopupMenu/ui"]
+[node name="Label" type="Label" parent="MainGame/PopupMenu/ui" unique_id=1855664041]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 text = "RECORDS"
 horizontal_alignment = 1
 
-[node name="Records" type="TabContainer" parent="MainGame/PopupMenu/ui"]
+[node name="Records" type="TabContainer" parent="MainGame/PopupMenu/ui" unique_id=1308862715]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 theme_override_fonts/font = ExtResource("18_43cos")
-theme_override_styles/tab_selected = SubResource("StyleBoxFlat_0prd4")
 theme_override_styles/panel = SubResource("StyleBoxFlat_m0c54")
 theme_override_styles/tabbar_background = SubResource("StyleBoxFlat_erase")
+theme_override_styles/tab_selected = SubResource("StyleBoxFlat_0prd4")
 tab_alignment = 1
+current_tab = 0
 clip_tabs = false
 
-[node name="EASY" type="VBoxContainer" parent="MainGame/PopupMenu/ui/Records"]
+[node name="EASY" type="VBoxContainer" parent="MainGame/PopupMenu/ui/Records" unique_id=1741752352]
+layout_mode = 2
+theme = ExtResource("1_mbmnw")
+metadata/_tab_index = 0
+
+[node name="Label" type="Label" parent="MainGame/PopupMenu/ui/Records/EASY" unique_id=13933632]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="Label" type="Label" parent="MainGame/PopupMenu/ui/Records/EASY"]
+[node name="Label2" type="Label" parent="MainGame/PopupMenu/ui/Records/EASY" unique_id=1853170]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="Label2" type="Label" parent="MainGame/PopupMenu/ui/Records/EASY"]
+[node name="Label3" type="Label" parent="MainGame/PopupMenu/ui/Records/EASY" unique_id=616245165]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="Label3" type="Label" parent="MainGame/PopupMenu/ui/Records/EASY"]
-layout_mode = 2
-theme = ExtResource("1_mbmnw")
-
-[node name="MEDIUM" type="VBoxContainer" parent="MainGame/PopupMenu/ui/Records"]
+[node name="MEDIUM" type="VBoxContainer" parent="MainGame/PopupMenu/ui/Records" unique_id=1112109564]
 visible = false
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
+metadata/_tab_index = 1
 
-[node name="Label" type="Label" parent="MainGame/PopupMenu/ui/Records/MEDIUM"]
+[node name="Label" type="Label" parent="MainGame/PopupMenu/ui/Records/MEDIUM" unique_id=1940692699]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="Label2" type="Label" parent="MainGame/PopupMenu/ui/Records/MEDIUM"]
+[node name="Label2" type="Label" parent="MainGame/PopupMenu/ui/Records/MEDIUM" unique_id=336659439]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="Label3" type="Label" parent="MainGame/PopupMenu/ui/Records/MEDIUM"]
+[node name="Label3" type="Label" parent="MainGame/PopupMenu/ui/Records/MEDIUM" unique_id=275131696]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="HARD" type="VBoxContainer" parent="MainGame/PopupMenu/ui/Records"]
+[node name="HARD" type="VBoxContainer" parent="MainGame/PopupMenu/ui/Records" unique_id=2097044978]
 visible = false
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
+metadata/_tab_index = 2
 
-[node name="Label" type="Label" parent="MainGame/PopupMenu/ui/Records/HARD"]
+[node name="Label" type="Label" parent="MainGame/PopupMenu/ui/Records/HARD" unique_id=1112608954]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="Label2" type="Label" parent="MainGame/PopupMenu/ui/Records/HARD"]
+[node name="Label2" type="Label" parent="MainGame/PopupMenu/ui/Records/HARD" unique_id=1564797189]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="Label3" type="Label" parent="MainGame/PopupMenu/ui/Records/HARD"]
+[node name="Label3" type="Label" parent="MainGame/PopupMenu/ui/Records/HARD" unique_id=398215090]
 layout_mode = 2
 theme = ExtResource("1_mbmnw")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Background" type="MeshInstance3D" parent="." unique_id=1651473852]
 transform = Transform3D(-6.30588e-08, 1, 1.0677e-07, -0.5, -1.23995e-07, 0.866026, 0.866026, 1.22538e-09, 0.5, 0, 0, 0)
 material_override = SubResource("ShaderMaterial_41xup")
 mesh = SubResource("BoxMesh_1fqed")
 skeleton = NodePath("../WorldEnvironment")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=763988759]
 environment = SubResource("Environment_sdnow")
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_175g2")
-}
+[node name="BackgroundAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1302679990]
+libraries/ = SubResource("AnimationLibrary_175g2")
 speed_scale = 0.545
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1370401211]
 transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0)
 
-[node name="SFXPlayer" type="AudioStreamPlayer" parent="."]
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="." unique_id=1537546023]
 volume_db = -5.0
 
-[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="."]
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="." unique_id=310786257]
 stream = ExtResource("20_e02jb")
 volume_db = -8.721
 
-[node name="scene" parent="." instance=ExtResource("23_8ofhm")]
+[node name="scene" parent="." unique_id=1522237226 instance=ExtResource("23_8ofhm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.40887, -1.00941)
 
-[node name="Cube_003" parent="scene" index="2"]
+[node name="Cube_003" parent="scene" index="2" unique_id=1291562045]
 transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, -1.57041, 0, 0)
 
-[node name="Cube_004" parent="scene" index="3"]
+[node name="Cube_004" parent="scene" index="3" unique_id=1499270691]
 transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 1.8015, 0, 0)
 
 [editable path="scene"]

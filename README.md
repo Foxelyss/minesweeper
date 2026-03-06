@@ -1,6 +1,6 @@
 # Minesweeper made in C++ with Godot!
 
-![изображение](https://github.com/user-attachments/assets/b36a68aa-8398-42ad-b4ec-4ebbc6ee5116)
+![Gameplay](https://github.com/user-attachments/assets/b36a68aa-8398-42ad-b4ec-4ebbc6ee5116)
 
 You can play it on itch.io https://foxelyss.itch.io/minesweeper!
 
@@ -14,4 +14,25 @@ casted to pointer is impossible unless you check Godot source code.
  - GDExtension API is just a labirinth of unused functionality
  - Debugging and printing info doesn't always work as expected!
 
-_Building is done using default sconstruct, so you can check out official docs_
+## Building
+
+Requirements: C++ 17 compiler, just, scons
+
+For simplicity, there is a `just` file which does building and etc. 
+
+```bash
+just build linux yes # for dev
+just build linux # for release build
+```
+or
+```bash
+scons platform=linux target=template_debug dev_build=yes 
+scons platform=linux target=template_release 
+```
+respectively.
+
+## Autocompletion
+
+For autocompletion run `just prepare_for_lsp`. clangd and other tools 
+would enable suggestions and detect generated `compile_commands.json`.
+

@@ -2,22 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crhvvhe3d5ksl"
-path.s3tc="res://.godot/imported/scene_flag Base Color.png-55b2d085bfa445eec6d0adf01987300d.s3tc.ctex"
-path.etc2="res://.godot/imported/scene_flag Base Color.png-55b2d085bfa445eec6d0adf01987300d.etc2.ctex"
+uid="uid://dg8n0b75wml3e"
+path="res://.godot/imported/Cell_Page 13.png-2c4040414b6b8f135fa96cc49afa7b49.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene_flag Base Color.png"
-dest_files=["res://.godot/imported/scene_flag Base Color.png-55b2d085bfa445eec6d0adf01987300d.s3tc.ctex", "res://.godot/imported/scene_flag Base Color.png-55b2d085bfa445eec6d0adf01987300d.etc2.ctex"]
+source_file="res://assets/Cell_Page 13.png"
+dest_files=["res://.godot/imported/Cell_Page 13.png-2c4040414b6b8f135fa96cc49afa7b49.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -25,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -39,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

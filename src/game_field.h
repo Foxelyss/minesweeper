@@ -1,12 +1,10 @@
 #ifndef FIELD_H
 #define FIELD_H
 
-#include "godot_cpp/variant/vector2i.hpp"
-#include <array>
 #include <cstdint>
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/random_number_generator.hpp>
-#include <queue>
+#include <godot_cpp/variant/vector2i.hpp>
 
 typedef struct Cell {
   uint8_t mines_around = 0;
@@ -20,8 +18,8 @@ using namespace std;
 
 namespace godot {
 
-class Field : public Node {
-  GDCLASS(Field, Node);
+class GameField : public Node {
+  GDCLASS(GameField, Node);
 
 private:
   RandomNumberGenerator _random_generator;
@@ -41,8 +39,8 @@ private:
 public:
   static void _bind_methods();
 
-  Field();
-  ~Field();
+  GameField();
+  ~GameField();
 
   void start_game(int selected_cell = -1);
   void set_properties(Vector2i resolution, int mines_quantity);
