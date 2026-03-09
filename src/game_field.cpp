@@ -97,6 +97,7 @@ void GameField::place_mines(int selected_cell = -1) {
     }
   }
 }
+
 void GameField::prepare_field() {
   for (int i = 0; i < _width * _height; i++) {
     _field.push_back(Cell_t());

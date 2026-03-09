@@ -1,5 +1,4 @@
 #include "main_menu.h"
-#include "field_renderer.h"
 
 #include <godot_cpp/classes/animation_player.hpp>
 #include <godot_cpp/classes/button.hpp>
@@ -22,6 +21,12 @@ void MainMenu::_ready() {
     set_process_mode(Node::ProcessMode::PROCESS_MODE_DISABLED);
     return;
   }
+
+  _game_field = get_node<GameField>("/root/FieldRepresenter");
+  _field_renderer = get_node<FieldRenderer>("/root/Game/MainGame/FieldRenderer");
+  _game_flow_animation_player = get_node<AnimationPlayer>("/root/Game/GameFlowAnimationPlayer");
+  _background_animation_player = get_node<AnimationPlayer>("/root/Game/BackgroundAnimationPlayer");
+
   auto buttons = get_node<VBoxContainer>("../Buttons");
 
   for (int i = 0; i < buttons->get_child_count(); i++) {
@@ -30,10 +35,7 @@ void MainMenu::_ready() {
     buttons->get_child(i)->get_node<Button>(".")->connect("pressed", v);
   }
 
-  _game_field = get_node<GameField>("/root/FieldRepresenter");
-  _game_flow_animation_player = get_node<AnimationPlayer>("/root/Game/GameFlowAnimationPlayer");
-
-  get_node<AnimationPlayer>("/root/Game/BackgroundAnimationPlayer")->set_current_animation("flow");
+  _background_animation_player->set_current_animation("flow");
   _game_flow_animation_player->set_current_animation("pop_in");
 }
 
@@ -55,7 +57,7 @@ void MainMenu::handle_button_press(int index) {
     mines_quantity = 99;
     break;
   case 3:
-    get_node<FieldRenderer>("/root/Game/MainGame/FieldRenderer")->show_records();
+    _field_renderer->show_records();
     return;
     break;
   case 4:
@@ -67,7 +69,5 @@ void MainMenu::handle_button_press(int index) {
 
   _game_flow_animation_player->set_current_animation("to_game");
   _game_field->set_properties(resolution, mines_quantity);
-  get_node<FieldRenderer>("/root/Game/MainGame/FieldRenderer")->start_game();
+  _field_renderer->start_game();
 }
-
-void MainMenu::_process(double delta) {}
